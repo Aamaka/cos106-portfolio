@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Chiamaka Ezeirunne, Software Engineering student at Miva Open University.">
+  <title>Home | Chiamaka Ezeirunne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Chiamaka<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <h1 class="hero__name">Chiamaka <span>Ezeirunne</span></h1>
+          <p class="hero__role">Software Engineering student at Miva Open University</p>
+          <p class="lead">Welcome to my portfolio! I&rsquo;m Chiamaka, and I&rsquo;m glad you&rsquo;re here. This space brings together who I am, what I&rsquo;ve learned, and the work I&rsquo;ve done as a Software Engineering student at Miva Open University. Take a look around to learn more about my skills, interests, and projects. Thank you for taking the time to visit, and I hope you enjoy exploring.</p>
+          <div class="hero__actions">
+            <a class="btn" href="projects.html">See my projects</a>
+            <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="images/chiamaka.jpg" alt="Chiamaka Ezeirunne smiling at her desk, wearing glasses and a maroon jacket" width="640" height="800">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="bio-heading">
+      <div class="container split">
+        <article class="prose">
+          <h2 id="bio-heading">A little about me</h2>
+          <p>Hi, I&rsquo;m Chiamaka Ezeirunne, a Software Engineering student at Miva Open University, graduating in 2029. I&rsquo;m passionate about building clean, user-friendly web applications and turning ideas into working solutions.</p>
+          <p>I enjoy problem-solving, learning new technologies, and collaborating on projects that make everyday tasks simpler. Outside of coding, I like exploring UI/UX design, reading about emerging tech, and sharing what I learn with fellow students.</p>
+          <p>I&rsquo;m focused on growing into a developer who writes thoughtful code and creates real value for the people who use it.</p>
+        </article>
+        <ul class="facts" aria-label="Quick facts">
+          <li><strong>Studying</strong>BSc Software Engineering, Miva Open University</li>
+          <li><strong>Graduating</strong>2029</li>
+          <li><strong>Based in</strong>Lagos, Nigeria</li>
+          <li><strong>Experience</strong>Backend engineer in fintech since 2021</li>
+          <li><strong>Favourite stack</strong>Java, Spring Boot, PostgreSQL, and the web</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="video-heading">
+      <div class="container split">
+        <div class="prose">
+          <h2 id="video-heading">A quick hello</h2>
+          <p>This short clip introduces me and what I work on. It plays without sound, so you can watch it anywhere.</p>
+          <p>When you&rsquo;re ready, explore the rest of the site:</p>
+        </div>
+        <figure class="video-frame">
+          <video controls muted playsinline preload="metadata" poster="media/intro-poster.jpg">
+            <source src="media/intro.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+          <figcaption>Introduction video, 12 seconds</figcaption>
+        </figure>
+      </div>
+      <div class="container" style="margin-top:2rem">
+        <ul class="page-links">
+          <li><a href="about.html"><strong>About me</strong>Education, goals, skills and hobbies</a></li>
+          <li><a href="projects.html"><strong>Projects</strong>Java and Spring Boot apps from my GitHub</a></li>
+          <li><a href="planner.html"><strong>Academic planner</strong>Track coursework and deadlines</a></li>
+          <li><a href="contact.html"><strong>Contact</strong>Send me a message</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>Chiamaka Ezeirunne</strong></p>
+        <p>Department of Software Engineering, Miva Open University</p>
+        <p>Matric No: 2025/C/SENG/0791</p>
+      </div>
+      <div>
+        <p><a href="mailto:c.ezeirunne4496@miva.edu.ng">c.ezeirunne4496@miva.edu.ng</a></p>
+        <p>COS 106 Term Project &copy; <span id="year">2026</span></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

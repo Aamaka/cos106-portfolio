@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Arial, sans-serif">
+  <rect width="640" height="400" fill="#eef1f7"/>
+  <rect x="40" y="40" width="560" height="290" rx="8" fill="#fff" stroke="#dbe1ec" stroke-width="2"/>
+  <rect x="40" y="40" width="560" height="44" rx="8" fill="#1c2b45"/>
+  <rect x="40" y="70" width="560" height="14" fill="#1c2b45"/>
+  <g font-size="14" fill="#fff" font-weight="bold"><text x="60" y="68">Student</text><text x="230" y="68">Grade</text><text x="330" y="68">Fees</text><text x="440" y="68">Paid</text></g>
+  <g font-size="14" fill="#1c2b45">
+    <text x="60" y="122">Tolu Ade</text><text x="230" y="122">JSS 2</text><text x="330" y="122">150,000</text><text x="440" y="122" fill="#2e8b6a">150,000</text>
+    <rect x="40" y="140" width="560" height="44" fill="#f6f7fb"/>
+    <text x="60" y="168">Ifeoma Nwosu</text><text x="230" y="168">JSS 2</text><text x="330" y="168">150,000</text><text x="440" y="168" fill="#a3304f">90,000</text>
+    <text x="60" y="214">Musa Bello</text><text x="230" y="214">JSS 2</text><text x="330" y="214">150,000</text><text x="440" y="214" fill="#2e8b6a">150,000</text>
+    <rect x="40" y="232" width="560" height="44" fill="#f6f7fb"/>
+    <text x="60" y="260">Grace Eze</text><text x="230" y="260">JSS 2</text><text x="330" y="260">150,000</text><text x="440" y="260" fill="#a3304f">60,000</text>
+  </g>
+  <text x="60" y="312" font-size="13" fill="#5b6b82">GET /find  returns every student in a grade</text>
+  <text x="40" y="370" font-size="14" fill="#5b6b82">Illustration of student records in the school application</text>
+</svg>

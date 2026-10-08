@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive academic task planner.">
+  <title>Academic Planner | Chiamaka Ezeirunne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Chiamaka<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="container prose">
+        <h1>Academic planner</h1>
+        <p class="lead">Keep track of assignments, revision and deadlines. Tasks are saved in this browser, so they&rsquo;ll still be here when you come back.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:1rem">
+      <div class="container">
+        <div class="planner">
+          <form class="task-form" id="task-form" novalidate>
+            <div class="field">
+              <label for="task-input">Task</label>
+              <input type="text" id="task-input" placeholder="e.g. Submit COS 106 term project" maxlength="120">
+            </div>
+            <div class="field">
+              <label for="task-course">Course</label>
+              <select id="task-course">
+                <option value="General">General</option>
+                <option value="COS 106">COS 106</option>
+                <option value="COS 101">COS 101</option>
+                <option value="MTH 101">MTH 101</option>
+                <option value="GST 101">GST 101</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="task-date">Due date</label>
+              <input type="date" id="task-date">
+            </div>
+            <button class="btn" type="submit">Add task</button>
+          </form>
+          <p class="error-msg" id="task-error" role="alert"></p>
+
+          <div class="toolbar">
+            <div class="filters" role="group" aria-label="Filter tasks">
+              <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-btn" type="button" data-filter="active" aria-pressed="false">To do</button>
+              <button class="filter-btn" type="button" data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+            <span class="task-count" id="task-count" aria-live="polite"></span>
+          </div>
+
+          <ul class="task-list" id="task-list"></ul>
+          <p class="empty-state" id="empty-state" hidden>No tasks here yet. Add your first task above.</p>
+
+          <div style="margin-top:1rem">
+            <button class="btn btn--ghost btn--small" type="button" id="clear-completed">Clear completed tasks</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>Chiamaka Ezeirunne</strong></p>
+        <p>Department of Software Engineering, Miva Open University</p>
+        <p>Matric No: 2025/C/SENG/0791</p>
+      </div>
+      <div>
+        <p><a href="mailto:c.ezeirunne4496@miva.edu.ng">c.ezeirunne4496@miva.edu.ng</a></p>
+        <p>COS 106 Term Project &copy; <span id="year">2026</span></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

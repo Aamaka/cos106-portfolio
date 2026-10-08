@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected backend and web projects by Chiamaka Ezeirunne.">
+  <title>Projects | Chiamaka Ezeirunne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Chiamaka<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="container prose">
+        <h1>Projects</h1>
+        <p class="lead">Projects from my GitHub, built while learning Java and Spring Boot at Semicolon Africa. The images are illustrations of how each project works.</p>
+      </div>
+    </header>
+    <section class="section" style="padding-top:1rem">
+      <div class="container">
+        <article class="project">
+          <figure class="project__media">
+            <img src="images/project-kolo.svg" alt="List of the Kolo API endpoints beside an account card showing an account number and balance" width="640" height="400" loading="lazy">
+          </figure>
+          <div>
+            <h2>Kolo: banking API</h2>
+            <p>A REST API for a simple bank. Customers can register, log in, deposit, withdraw, check their balance and transfer money to another account.</p>
+            <p>Each new customer gets a generated 10-digit account number. Transfers check the sender&rsquo;s password and balance before moving money, and invalid amounts are rejected with clear error messages.</p>
+            <ul class="tags" aria-label="Technologies used"><li>Java</li><li>Spring Boot</li><li>MongoDB</li><li>Lombok</li></ul>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/Aamaka/Kolo" target="_blank" rel="noopener">View code on GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <figure class="project__media">
+            <img src="images/project-mogbo.svg" alt="A user profile linked to three parties they created, each with a name and location" width="640" height="400" loading="lazy">
+          </figure>
+          <div>
+            <h2>mogbo: party planning API</h2>
+            <p>A backend for planning parties. People sign up with their email, log in, and create parties with a name and location.</p>
+            <p>Every party is saved and linked to the user who created it, and duplicate sign-ups are blocked. Responses use a consistent success-or-error format, and the project includes tests that run against an embedded MongoDB database.</p>
+            <ul class="tags" aria-label="Technologies used"><li>Java</li><li>Spring Boot</li><li>Maven</li><li>MongoDB</li><li>JUnit</li></ul>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/Aamaka/mogbo" target="_blank" rel="noopener">View code on GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <figure class="project__media">
+            <img src="images/project-school.svg" alt="A table of students with their grade, school fees and amount paid" width="640" height="400" loading="lazy">
+          </figure>
+          <div>
+            <h2>School: student registration app</h2>
+            <p>An application for registering students at a school. Each record stores the student&rsquo;s name, email, age, class grade, school fees and the amount paid so far.</p>
+            <p>Students can&rsquo;t be registered twice with the same email, and staff can look up every student in a particular grade.</p>
+            <ul class="tags" aria-label="Technologies used"><li>Java</li><li>Spring Boot</li><li>MongoDB</li><li>REST APIs</li></ul>
+            <div class="project__links">
+              <a class="btn btn--small" href="https://github.com/Aamaka/school" target="_blank" rel="noopener">View code on GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>Chiamaka Ezeirunne</strong></p>
+        <p>Department of Software Engineering, Miva Open University</p>
+        <p>Matric No: 2025/C/SENG/0791</p>
+      </div>
+      <div>
+        <p><a href="mailto:c.ezeirunne4496@miva.edu.ng">c.ezeirunne4496@miva.edu.ng</a></p>
+        <p>COS 106 Term Project &copy; <span id="year">2026</span></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
